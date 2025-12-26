@@ -1,13 +1,13 @@
-# 403 Bypass Tool 사용 가이드
+# 40x Bypass Tool 사용 가이드
 
-이 문서는 `bypass_403.py` 도구의 사용 방법을 설명합니다.
+이 문서는 `bypass_40x.py` 도구의 사용 방법을 설명합니다.
 
 ## 기본 사용법 (Basic Usage)
 
 대상 URL을 지정하여 스크립트를 실행합니다. `http/https` 프로토콜을 생략하면 기본적으로 http로 시도합니다.
 
 ```bash
-python3 bypass_403.py --url https://target.com/admin
+python3 bypass_40x.py --url https://target.com/admin
 ```
 
 ## 상세 출력 모드 (Verbose Mode) - 권장
@@ -15,9 +15,9 @@ python3 bypass_403.py --url https://target.com/admin
 기본적으로 이 도구는 "의미 있는" 결과(상태 코드 변경 또는 응답 크기의 급격한 차이)만 출력합니다. **모든** 시도 결과를 확인하려면 상세 출력 플래그를 사용하세요.
 
 ```bash
-python3 bypass_403.py --url https://target.com/admin --verbose
+python3 bypass_40x.py --url https://target.com/admin --verbose
 # 또는
-python3 bypass_403.py --url https://target.com/admin -v
+python3 bypass_40x.py --url https://target.com/admin -v
 ```
 
 ## 프록시 사용 (Burp Suite 등)
@@ -28,7 +28,7 @@ python3 bypass_403.py --url https://target.com/admin -v
 2.  `--proxy` 옵션과 함께 SSL 인증서 오류 무시를 위해 `--insecure` 옵션을 사용합니다.
 
 ```bash
-python3 bypass_403.py --url https://target.com/admin --proxy http://127.0.0.1:8080 --insecure
+python3 bypass_40x.py --url https://target.com/admin --proxy http://127.0.0.1:8080 --insecure
 ```
 
 ## 문제 해결 (Troubleshooting)

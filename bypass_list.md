@@ -1,4 +1,4 @@
-# 403 Bypass Techniques List
+# 40X Bypass Techniques List
 
 This file documents all the bypass techniques currently implemented in `bypass_403.py`.
 
