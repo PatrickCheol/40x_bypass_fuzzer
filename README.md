@@ -22,7 +22,7 @@ python3 bypass_40x.py --url https://target.com/admin -v
 
 ## 프록시 사용 (Burp Suite 등)
 
-트래픽을 분석하거나 IP 차단(예: `kt.com` 사례)을 우회해야 할 경우 프록시를 사용하세요.
+트래픽을 분석하거나 IP 차단(예: `xx.com` 사례)을 우회해야 할 경우 프록시를 사용하세요.
 
 1.  프록시 설정 (예: Burp Suite가 `127.0.0.1:8080`에서 리스닝 중일 때).
 2.  `--proxy` 옵션과 함께 SSL 인증서 오류 무시를 위해 `--insecure` 옵션을 사용합니다.
