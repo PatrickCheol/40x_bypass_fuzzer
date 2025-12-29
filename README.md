@@ -31,17 +31,6 @@ python3 bypass_40x.py --url https://target.com/admin -v
 python3 bypass_40x.py --url https://target.com/admin --proxy http://127.0.0.1:8080 --insecure
 ```
 
-## 문제 해결 (Troubleshooting)
-
-### 연결 시간 초과 (Connection Timeouts)
-`ConnectTimeoutError` 또는 "Max retries exceeded" 오류가 발생하면, 대상 서버가 방화벽 레벨에서 IP를 차단했을 가능성이 높습니다.
-**해결책**: 프록시 서버나 VPN을 사용하여 IP를 변경해서 다시 시도하세요.
-
-### 결과가 출력되지 않음 (Empty Output)
-툴이 실행되었는데 Baseline 외에 아무것도 출력되지 않는 경우:
-1.  대상 서버가 모든 요청을 리다이렉트(예: 301로 로그인 페이지 이동)하여, Baseline과 상태 코드가 동일하기 때문에 "차이점"이 발견되지 않은 것입니다.
-2.  `--verbose` 옵션을 사용하여 실제로 어떤 응답이 오고 있는지 확인하세요.
-
 ## 주요 기능 (Features Overview)
 - **세션 재사용 (Session Reuse)**: TCP 연결(Keep-Alive)을 재사용하여 속도가 빠르고 의심을 덜 받습니다.
 - **브라우저 위장 (Browser Masquerading)**: 실제 브라우저처럼 보이도록 User-Agent 및 Chrome 전용 헤더(`Sec-Ch-Ua` 등)를 전송합니다.
